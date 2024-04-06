@@ -71,6 +71,7 @@ ALLOWED_HOSTS = [
     'localhost',
     '8000-dinismachad-apirunthrou-o1ehitx9y00.ws-us110.gitpod.io',
     '127.0.0.1',
+    '8000-dinismachad-apirunthrou-6slzdmdebf5.ws-eu110.gitpod.io',
     os.environ.get('ALLOWED_HOST'),
 ]
 
@@ -115,10 +116,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-if 'CLIENT_ORIGIN' in os.environ:
-    CORS_ALLOWED_ORIGINS = [
-        os.environ.get('CLIENT_ORIGIN')
-    ]
+# if 'CLIENT_ORIGIN' in os.environ:
+#     CORS_ALLOWED_ORIGINS = [
+#         os.environ.get('CLIENT_ORIGIN')
+#     ]
 if 'CLIENT_ORIGIN_DEV' in os.environ:
     extracted_url = re.match(
         r'^.+-', os.environ.get('CLIENT_ORIGIN_DEV', ''), re.IGNORECASE).group(0)

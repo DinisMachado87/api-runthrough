@@ -15,6 +15,8 @@ import os
 import dj_database_url
 import re
 
+from corsheaders.defaults import default_headers, default_methods
+
 
 if os.path.exists('env.py'):
     import env
@@ -75,6 +77,9 @@ ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
 ]
 
+CORS_ALLOW_HEADERS = list(default_headers)
+CORS_ALLOW_METHODS = list(default_methods)
+CSRF_TRUSTED_ORIGINS = [os.environ.get('CLIENT_ORIGIN_DEV', 'CLIENT_ORIGIN')]
 
 # Application definition
 

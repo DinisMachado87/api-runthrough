@@ -40,3 +40,4 @@ class PostSerializer(serializers.ModelSerializer):
             'image',
             'image_filter'
         ]
+

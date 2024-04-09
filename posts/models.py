@@ -30,7 +30,7 @@ class Post(models.Model):
     content = models.TextField(blank=True)
     image = models.ImageField(
         upload_to='images/',
-        default='../default_post_mt6xda.jpg',
+        default='../default_post_mt6xda',
         blank=True
     )
     image_filter = models.CharField(

@@ -76,6 +76,7 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     '8000-dinismachad-apirunthrou-6slzdmdebf5.ws-eu110.gitpod.io',
     os.environ.get('ALLOWED_HOST'),
+    '8000-dinismachad-apirunthrou-6slzdmdebf5.ws-us110.gitpod.io' ,
 ]
 
 CORS_ALLOW_HEADERS = list(default_headers)

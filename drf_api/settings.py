@@ -21,7 +21,7 @@ from corsheaders.defaults import default_headers, default_methods
 if os.path.exists('env.py'):
     import env
 
-CLODINARY_URL = {
+CLOUDINARY_STORAGE = {
     'CLOUDINARY_URL': os.environ.get('CLOUDINARY_URL')
 }
 
